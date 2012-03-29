@@ -22,11 +22,11 @@
             <h4>Film tip:</h4>
             <?php
                 foreach ($films as $film): ?> 
-                    <p><?php echo $film->title; ?></p>
-                    <p><?php echo $film->genre; ?></p>
-                    <p><?php echo $film->rating; ?></p>
+                    <p><?php echo "Title: "; echo $film->title; ?></p>
+                    <p><?php echo "Genre: ";echo $film->genre; ?></p>
+                    <p><?php echo "Rating: ";echo $film->rating;?></p>
             <?php endforeach; ?>
-            
+            <img src = "<?php echo $film->picture; ?>" />
             <!--<p><a href="#shops" data-role="button">Shopping cart</a></p>
             <p><a href="#search" data-role="button">Search</a></p>-->
         
