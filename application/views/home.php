@@ -15,20 +15,27 @@
     <div data-role="page"  id = "home" data-theme = "a">
 
 	    <div data-role="header">
-		    <h1>Home</h1>
+	        
+		    <h1>
+		    <div data-role="controlgroup" data-type="horizontal" >
+		        <a href="#home" data-role="button" class="ui-btn-active">Home</a>
+	            <a href="#search" data-role="button">Search</a>
+	            <a href="#favs" data-role="button">Favourites</a>
+	            <a href="#watch" data-role="button">Watch list</a>	
+	        </div>
+	        </h1>
 	    </div><!-- /header -->
 
-	    <div data-role="content" >	
-            <h4>Film tip:</h4>
-            <?php
-                foreach ($films as $film): ?> 
-                    <p><?php echo "Title: "; echo $film->title; ?></p>
-                    <p><?php echo "Genre: ";echo $film->genre; ?></p>
-                    <p><?php echo "Rating: ";echo $film->rating;?></p>
-            <?php endforeach; ?>
-            <img src = "<?php echo $film->picture; ?>" />
-            <!--<p><a href="#shops" data-role="button">Shopping cart</a></p>
-            <p><a href="#search" data-role="button">Search</a></p>-->
+	    <div data-role="content" >
+	        
+                    <h4>Film tip:</h4>
+                    <?php
+                        foreach ($films as $film): ?> 
+                            <p><?php echo "Title: "; echo $film->title; ?></p>
+                            <p><?php echo "Genre: ";echo $film->genre; ?></p>
+                            <p><?php echo "Rating: ";echo $film->rating;?></p>
+                    <?php endforeach; ?>
+                    <img src = "<?php echo $film->picture; ?>" />
         
 	    </div><!-- /content -->
         <div data-role="footer" data-theme="a">
