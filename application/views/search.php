@@ -17,10 +17,10 @@
         <div data-role = "header">
             <h1>
 		    <div data-role="controlgroup" data-type="horizontal" >
-		        <a href="#home" data-role="button">Home</a>
-	            <a href="#search" data-role="button">Search</a>
-	            <a href="#favs" data-role="button">Favourites</a>
-	            <a href="#watch" data-role="button">Watch list</a>	
+		        <a href="/home" data-role="button">Home</a>
+	            <a href="/search" data-role="button">Search</a>
+	            <a href="/favs" data-role="button">Favourites</a>
+	            <a href="/watch" data-role="button">Watch list</a>	
 	        </div>
 	        </h1>
         </div>

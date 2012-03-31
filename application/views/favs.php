@@ -12,7 +12,7 @@
   
 </head>
 <body>
-    <div data-role="page"  id = "home" data-theme = "a">
+    <div data-role="page"  id = "favs" data-theme = "a">
 
 	    <div data-role="header">
 	        
@@ -30,7 +30,7 @@
 	        
                     <h4>Film tip:</h4>
                     <?php
-                        foreach ($tip as $film): ?> 
+                        foreach ($fav as $film): ?> 
                             <p><b>Title: </b><?php echo $film->title; ?></p>
                             <p><b>Cast: </b><?php echo $film->m_chars; ?></p>
                             <p><b>Genre: </b><?php echo $film->genre; ?></p>
