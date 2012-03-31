@@ -30,10 +30,11 @@
 	        
                     <h4>Film tip:</h4>
                     <?php
-                        foreach ($films as $film): ?> 
-                            <p><?php echo "Title: "; echo $film->title; ?></p>
-                            <p><?php echo "Genre: ";echo $film->genre; ?></p>
-                            <p><?php echo "Rating: ";echo $film->rating;?></p>
+                        foreach ($tip as $film): ?> 
+                            <p><b>Title: </b><?php echo $film->title; ?></p>
+                            <p><b>Cast: </b><?php echo $film->m_chars; ?></p>
+                            <p><b>Genre: </b><?php echo $film->genre; ?></p>
+                            <p><b>Rating: </b><?php echo $film->rating;?></p>
                     <?php endforeach; ?>
                     <img src = "<?php echo $film->picture; ?>" />
         

@@ -15,7 +15,14 @@
 
 <div data-role = "page" id = "search" data-theme = "a">
         <div data-role = "header">
-            <h1>Search</h1>
+            <h1>
+		    <div data-role="controlgroup" data-type="horizontal" >
+		        <a href="#home" data-role="button">Home</a>
+	            <a href="#search" data-role="button">Search</a>
+	            <a href="#favs" data-role="button">Favourites</a>
+	            <a href="#watch" data-role="button">Watch list</a>	
+	        </div>
+	        </h1>
         </div>
         
         <div data-role = "content" >
@@ -23,14 +30,11 @@
             <form action="#results" method = "post" class="ui-body ui-body-d ui-corner-all">
                 <fieldset>
                     <div data-role="fieldcontain">
-	                    <label for="course_name">Course title:</label>
+	                    <label for="course_name">Film title:</label>
 	                    <input type="text" name="name" id="name" value=""/></br>
-	                    <label for="catalog_num">Catalog number:</label>
-	                    <input type="text" name="number" id="number" value=""/></br>
-	                    <label for="instructor">Instructor's name:</label>
-	                    <input type="text" name="instr" id="instr" value=""/></br>
-	                    <label for="day">Day:</label>
-	                    <input type="text" name="day" id="day" value=""/>
+	                    <!--TODO: genre, 3 possibilities
+	                              actor, 1 possibility
+	                              rating-->
 			        </div>
 			    </fieldset>
 			</form>
