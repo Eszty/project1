@@ -72,7 +72,7 @@
                             <p><b>Plot: </b><?php echo $film->plot;?></p>
                     <?php endforeach; ?>
                     <img src = "<?php echo $film->picture; ?>"  width="100" height="150"/>
-        
+
 	    </div><!-- /content -->
 	    <div data-role="footer" data-theme="a">
 		    <h5>Project1 by Eszter Fodor</h5>

@@ -27,14 +27,72 @@
         
         <div data-role = "content" >
         <h4>Search for films:</h4>
-            <form action="#results" method = "post" class="ui-body ui-body-d ui-corner-all">
+            <form action="/results" method = "post" class="ui-body ui-body-d ui-corner-all">
                 <fieldset>
                     <div data-role="fieldcontain">
-	                    <label for="course_name">Film title:</label>
-	                    <input type="text" name="name" id="name" value=""/></br>
+	                    <label for="title"><b>Film title: </b></label>
+	                    <input type="text" name="name" id="title" value=""/></br>
+	                    
+	                    <label for="genre1"><b>Genre: </b></label>
+	                    <select name="genre1">
+	                    <option value="none">Select genre</option>
+	                    <option value="action">Action</option>
+	                    <option value="adventure">Adventure</option>
+	                    <option value="animation">Animation</option>
+	                    <option value="bio">Biography</option>
+	                    <option value="comedy">Comedy</option>
+	                    <option value="crime">Crime</option>
+	                    <option value="documentary">Documentary</option>
+	                    <option value="drama">Drama</option>
+	                    <option value="fantasy">Fantasy</option>
+	                    <option value="horror">Horror</option>
+	                    <option value="romance">Romance</option>
+	                    <option value="scifi">Sci-fi</option>
+	                    <option value="war">War</option>
+	                    <option value="western">Western</option>
+	                    </select>
+	                    
+	                    <label for="genre2"></label>
+	                    <select name="genre2">
+	                    <option value="none">Select genre</option>
+	                    <option value="action">Action</option>
+	                    <option value="adventure">Adventure</option>
+	                    <option value="animation">Animation</option>
+	                    <option value="bio">Biography</option>
+	                    <option value="comedy">Comedy</option>
+	                    <option value="crime">Crime</option>
+	                    <option value="documentary">Documentary</option>
+	                    <option value="drama">Drama</option>
+	                    <option value="fantasy">Fantasy</option>
+	                    <option value="horror">Horror</option>
+	                    <option value="romance">Romance</option>
+	                    <option value="scifi">Sci-fi</option>
+	                    <option value="war">War</option>
+	                    <option value="western">Western</option>
+	                    </select>
+	                    
+	                    <label for="genre3"></label>
+	                    <select name="genre3">
+	                    <option value="none">Select genre</option>
+	                    <option value="action">Action</option>
+	                    <option value="adventure">Adventure</option>
+	                    <option value="animation">Animation</option>
+	                    <option value="bio">Biography</option>
+	                    <option value="comedy">Comedy</option>
+	                    <option value="crime">Crime</option>
+	                    <option value="documentary">Documentary</option>
+	                    <option value="drama">Drama</option>
+	                    <option value="fantasy">Fantasy</option>
+	                    <option value="horror">Horror</option>
+	                    <option value="romance">Romance</option>
+	                    <option value="scifi">Sci-fi</option>
+	                    <option value="war">War</option>
+	                    <option value="western">Western</option>
+	                    </select>	                    
 	                    <!--TODO: genre, 3 possibilities
 	                              actor, 1 possibility
 	                              rating-->
+
 			        </div>
 			    </fieldset>
 			</form>
