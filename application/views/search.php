@@ -25,15 +25,16 @@
 	        </h1>
         </div>
         
-        <div data-role = "content" >
+        <div data-role = "content"  data-theme="a">
         <h4>Search for films:</h4>
             <form action="/results" method = "post" class="ui-body ui-body-d ui-corner-all">
                 <fieldset>
-                    <div data-role="fieldcontain">
+                    <div data-role="fieldcontain" >
 	                    <label for="title"><b>Film title: </b></label>
 	                    <input type="text" name="name" id="title" value=""/></br>
-	                    
-	                    <label for="genre1"><b>Genre: </b></label>
+	                </div>
+	                 
+	                    <label for="genre1" class="select"><b>Genre: </b></label>
 	                    <select name="genre1">
 	                    <option value="none">Select genre</option>
 	                    <option value="action">Action</option>
@@ -88,18 +89,38 @@
 	                    <option value="scifi">Sci-fi</option>
 	                    <option value="war">War</option>
 	                    <option value="western">Western</option>
-	                    </select>	                    
+	                    </select>	  
+	                
+	                    
+	                <div data-role="fieldcontain">
+	                    <label for="actor"><b>Actor: </b></label>
+	                    <input type="text" name="actor" id="actor" value=""/></br>                  
 	                    <!--TODO: genre, 3 possibilities
 	                              actor, 1 possibility
 	                              rating-->
 
 			        </div>
+			        
+			            <label for="rating"><b>Rating: </b></label>
+	                    <select name="rating">
+	                    <option value="none">Select rating</option>
+	                    <option value="one">1</option>
+	                    <option value="two">2</option>
+	                    <option value="three">3</option>
+	                    <option value="four">4</option>
+	                    <option value="five">5</option>
+	                    <option value="six">6</option>
+	                    <option value="seven">7</option>
+	                    <option value="eight">8</option>
+	                    <option value="nine">9</option>
+	                    <option value="ten">10</option>
+	                    </select>
 			    </fieldset>
 			</form>
         </div>
     
     <div data-role="footer" data-theme="a">
-		<h5>Project0 by Eszter Fodor</h5>
+		<h5>Project1 by Eszter Fodor</h5>
 	</div><!-- /footer -->
 </div><!-- /page search -->
 
