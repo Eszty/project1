@@ -32,17 +32,53 @@
                     <?php
                         foreach ($tip as $film): ?> 
                             <p><b>Title: </b><?php echo $film->title; ?></p>
-                            <p><b>Cast: </b><?php echo $film->m_chars; ?></p>
                             <p><b>Genre: </b><?php echo $film->genre; ?></p>
                             <p><b>Rating: </b><?php echo $film->rating;?></p>
                     <?php endforeach; ?>
-                    <img src = "<?php echo $film->picture; ?>" />
+                    <p><img src = "<?php echo $film->picture; ?>"  width="100" height="150"/></p>
+                    
+                    <a href = "#details">View details</a>
         
 	    </div><!-- /content -->
         <div data-role="footer" data-theme="a">
-		    <h5>Project0 by Eszter Fodor</h5>
+		    <h5>Project1 by Eszter Fodor</h5>
 	    </div><!-- /footer -->
+	    
     </div><!-- /page one -->
+    
+    <div data-role="page"  id = "details" data-theme = "a">
+
+	    <div data-role="header">
+	        
+		    <h1>
+		    <div data-role="controlgroup" data-type="horizontal" >
+		        <a href="/home" data-role="button" class="ui-btn-active">Home</a>
+	            <a href="/search" data-role="button">Search</a>
+	            <a href="/favs" data-role="button">Favourites</a>
+	            <a href="/watch" data-role="button">Watch list</a>	
+	        </div>
+	        </h1>
+	    </div><!-- /header -->
+
+	    <div data-role="content" >
+	        
+                    <h4>Film tip:</h4>
+                    <?php
+                        foreach ($tip as $film): ?> 
+                            <p><b>Title: </b><?php echo $film->title; ?></p>
+                            <p><b>Genre: </b><?php echo $film->genre; ?></p>
+                            <p><b>Rating: </b><?php echo $film->rating;?></p>
+                            <p><b>Cast: </b><?php echo $film->m_chars;?></p>
+                            <p><b>Plot: </b><?php echo $film->plot;?></p>
+                    <?php endforeach; ?>
+                    <img src = "<?php echo $film->picture; ?>"  width="100" height="150"/>
+        
+	    </div><!-- /content -->
+	    <div data-role="footer" data-theme="a">
+		    <h5>Project1 by Eszter Fodor</h5>
+	    </div><!-- /footer -->
+	    
+    </div><!-- /page details -->
     
 </body>
 </html>

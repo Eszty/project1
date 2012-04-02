@@ -35,7 +35,7 @@
                                 <p><b>Title: </b><?php echo $film->title; ?></p>
                             <?php endforeach; ?>
                     <?php endforeach; ?>
-                    <img src = "<?php echo $film->picture; ?>" />
+                    <img src = "<?php echo $film->picture; ?>" width="100" height="150"/>
         
 	    </div><!-- /content -->
         <div data-role="footer" data-theme="a">
