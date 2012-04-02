@@ -18,23 +18,22 @@
 	        
 		    <h1>
 		    <div data-role="controlgroup" data-type="horizontal" >
-		        <a href="/home" data-role="button" class="ui-btn-active">Home</a>
-	            <a href="/search" data-role="button">Search</a>
-	            <a href="/favs" data-role="button">Favourites</a>
-	            <a href="/watch" data-role="button">Watch list</a>	
+		        <a href="/home" data-role="button" >Home</a>
+	            <a href="/search" data-role="button" >Search</a>
+	            <a href="/favs" data-role="button" class="ui-btn-active">Favourites</a>
+	            <a href="/watch" data-role="button" >Watch list</a>	
 	        </div>
 	        </h1>
 	    </div><!-- /header -->
 
+        <!--Print the favourites of the user-->
 	    <div data-role="content" >
-	        
-                    <h4>Film tip:</h4>
+                    <h4>Favourites:</h4>
                     <?php
-                        foreach ($fav as $film): ?> 
-                            <p><b>Title: </b><?php echo $film->title; ?></p>
-                            <p><b>Cast: </b><?php echo $film->m_chars; ?></p>
-                            <p><b>Genre: </b><?php echo $film->genre; ?></p>
-                            <p><b>Rating: </b><?php echo $film->rating;?></p>
+                        foreach ($fav as $film): 
+                            foreach ($film as $film): ?> 
+                                <p><b>Title: </b><?php echo $film->title; ?></p>
+                            <?php endforeach; ?>
                     <?php endforeach; ?>
                     <img src = "<?php echo $film->picture; ?>" />
         
