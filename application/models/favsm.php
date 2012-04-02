@@ -1,5 +1,5 @@
 <?php
-# Model for favourites
+# Model for 'favourites'
 
 class Favsm extends CI_Model 
 {
@@ -7,10 +7,10 @@ class Favsm extends CI_Model
     {
         $user_id = 1; 
         
-        # returns film id from table favourites
+        # returns film id from table 'favourites'
         $film_id = $this->db->get_where('favourites', array('user_id'=>$user_id))->result();
         
-        # get the film id's from table film
+        # get the film id's from table 'films'
         $favs_array = array();
         foreach($film_id as $film)
         {
