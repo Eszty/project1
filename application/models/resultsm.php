@@ -5,6 +5,7 @@ class Resultsm extends CI_Model
 {  
     public function results($data)
     {
+        #var_dump($data);
         #$title = $data["title"];
         $title = "Elizabeth";
 	    $genre1 = $data["genre1"];
@@ -16,16 +17,21 @@ class Resultsm extends CI_Model
 	    $id_array = array();
 	    
 	    $this->db->select('id');
-	    var_dump($title);
 	    if($title != null)
 	    {
-	        var_dump($title);
 	        $a = $this->db->get_where('films', array('title'=>$title))->result();
 	        array_push($id_array, $a);
 	    }
 	    
-	    return $this->db->get_where('films', array(array('id'=>$a)))->result();
+	    $film_array = array();
 	    
+	    foreach($id_array as $id)
+	    {
+	        var_dump($id);
+	        $f = $this->db->get_where('films', array('id' => $id))->result();
+	        array_push($film_array, $f);
+	    }
+	    return $film_array;
 
     }
 }

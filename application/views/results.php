@@ -30,8 +30,10 @@
 	    <div data-role="content" >
                     <h4>Results:</h4>
                     <?php
-                        foreach ($results as $film): ?> 
+                        foreach ($results as $films):
+                            foreach ($films as $film): var_dump($film);?> 
                                 <p><b>Title: </b><?php echo $film->title; ?></p>
+                            <?php endforeach; ?>
                     <?php endforeach; ?>
                     <img src = "<?php echo $film->picture; ?>" width="100" height="150" />
         
