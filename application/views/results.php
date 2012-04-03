@@ -19,8 +19,8 @@
 		    <h1>
 		    <div data-role="controlgroup" data-type="horizontal" >
 		        <a href="/home" data-role="button" >Home</a>
-	            <a href="/search" data-role="button" >Search</a>
-	            <a href="/favs" data-role="button" class="ui-btn-active">Favourites</a>
+	            <a href="/search" data-role="button" class="ui-btn-active">Search</a>
+	            <a href="/favs" data-role="button" >Favourites</a>
 	            <a href="/watch" data-role="button" >Watch list</a>	
 	        </div>
 	        </h1>
@@ -30,10 +30,8 @@
 	    <div data-role="content" >
                     <h4>Results:</h4>
                     <?php
-                        foreach ($results as $film): 
-                            foreach ($film as $film): ?> 
+                        foreach ($results as $film): ?> 
                                 <p><b>Title: </b><?php echo $film->title; ?></p>
-                            <?php endforeach; ?>
                     <?php endforeach; ?>
                     <img src = "<?php echo $film->picture; ?>" width="100" height="150" />
         

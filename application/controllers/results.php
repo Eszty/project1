@@ -1,12 +1,14 @@
 <?php
 # Controller for search results
 
-public class Results extends CI_Controller
+class Results extends CI_Controller
 {
-    public function results()
+    public function index()
     {
+        $data = $this->input->post();
+        
         $this->load->model('Resultsm');
-        $results = $this->Resultsm->results;
+        $results = $this->Resultsm->results($data);
         $this->load->view('results.php', array('results'=>$results));
     }
 }

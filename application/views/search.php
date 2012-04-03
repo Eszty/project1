@@ -117,6 +117,7 @@
 	                    </select>
 			    </fieldset>
 			</form>
+			<p><a href="/results" data-role="button">Search</a></p>
         </div>
     
     <div data-role="footer" data-theme="a">
