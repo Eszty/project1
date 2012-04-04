@@ -28,7 +28,7 @@ class Resultsm extends CI_Model
 	    foreach($id_array as $id)
 	    {
 	        var_dump($id);
-	        $f = $this->db->get_where('films', array('id' => $id))->result();
+	        $f = $this->db->get_where('films', array('id' => ($id["id"])))->result();
 	        array_push($film_array, $f);
 	    }
 	    return $film_array;
