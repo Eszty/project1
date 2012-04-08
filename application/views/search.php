@@ -25,11 +25,11 @@
 	        </h1>
 	    </div>
         
-        <div data-role = "content"  data-theme="a">
+        <div data-role = "content"  >
         <h4>Search for films:</h4>
-            <form action="/results" method = "post" class="ui-body ui-body-d ui-corner-all">
+            <form action="/search" method = "post" class="ui-body ui-body-a ui-corner-all">
                 <fieldset>
-                    <div data-role="fieldcontain" >
+                    <div data-role="fieldcontain" data-theme="b">
 	                    <label for="title"><b>Film title: </b></label>
 	                    <input type="text" name="name" id="title" value=""/></br>
 	                </div>
@@ -113,9 +113,11 @@
 	                    <option value="nine">9</option>
 	                    <option value="ten">10</option>
 	                    </select>
+	                    
+	                    <p><button type="submit" data-theme="b" name="submit" value="submit-value">Search</button></p>
 			    </fieldset>
 			</form>
-			<p><a href="/results" data-role="button">Search</a></p>
+			
         </div>
     
     <div data-role="footer" data-theme="a">

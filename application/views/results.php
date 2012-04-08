@@ -26,11 +26,11 @@
 	        </h1>
 	    </div><!-- /header -->
 
-        <!--Print the favourites of the user-->
+        <!--Print the search results-->
 	    <div data-role="content" >
                     <h4>Results:</h4>
                     <?php
-                        foreach ($results as $films):
+                        foreach ($results as $films): #var_dump($results);
                             foreach ($films as $film): ?> 
                                 <p><b>Title: </b><?php echo $film->title; ?></p>
                             <?php endforeach; ?>
