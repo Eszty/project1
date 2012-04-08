@@ -31,7 +31,7 @@
                     <h4>Results:</h4>
                     <?php
                         foreach ($results as $films):
-                            foreach ($films as $film): var_dump($film);?> 
+                            foreach ($films as $film): ?> 
                                 <p><b>Title: </b><?php echo $film->title; ?></p>
                             <?php endforeach; ?>
                     <?php endforeach; ?>

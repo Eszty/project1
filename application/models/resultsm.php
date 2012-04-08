@@ -5,9 +5,9 @@ class Resultsm extends CI_Model
 {  
     public function results($data)
     {
-        #var_dump($data);
-        #$title = $data["title"];
-        $title = "Elizabeth";
+        var_dump($data);
+        $title = $data["title"];
+        #$title = "Elizabeth";
 	    $genre1 = $data["genre1"];
 	    $genre2 = $data["genre2"];
 	    $genre3 = $data["genre3"];
@@ -27,9 +27,10 @@ class Resultsm extends CI_Model
 	    
 	    foreach($id_array as $id)
 	    {
-	        var_dump($id);
-	        $f = $this->db->get_where('films', array('id' => ($id["id"])))->result();
-	        array_push($film_array, $f);
+	        foreach($id as $id){
+	            $f = $this->db->get_where('films', array('id' => ($id->id)))->result();
+	            array_push($film_array, $f);
+	        }
 	    }
 	    return $film_array;
 

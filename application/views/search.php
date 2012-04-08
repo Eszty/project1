@@ -23,7 +23,7 @@
 	            <a href="/watch" data-role="button">Watch list</a>	
 	        </div>
 	        </h1>
-        </div>
+	    </div>
         
         <div data-role = "content"  data-theme="a">
         <h4>Search for films:</h4>
@@ -95,9 +95,7 @@
 	                <div data-role="fieldcontain">
 	                    <label for="actor"><b>Actor: </b></label>
 	                    <input type="text" name="actor" id="actor" value=""/></br>                  
-	                    <!--TODO: genre, 3 possibilities
-	                              actor, 1 possibility
-	                              rating-->
+
 
 			        </div>
 			        

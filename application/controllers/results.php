@@ -9,7 +9,6 @@ class Results extends CI_Controller
         
         $this->load->model('Resultsm');
         $results = $this->Resultsm->results($data);
-        var_dump($results);
         $this->load->view('results.php', array('results'=>$results));
     }
 }

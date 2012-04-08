@@ -33,9 +33,10 @@
                         foreach ($watch as $film): 
                             foreach ($film as $film): ?> 
                                 <p><b>Title: </b><?php echo $film->title; ?></p>
+                                <img src = "<?php echo $film->picture; ?>" width="100" height="150"/>
                             <?php endforeach; ?>
                     <?php endforeach; ?>
-                    <img src = "<?php echo $film->picture; ?>" width="100" height="150"/>
+                    
         
 	    </div><!-- /content -->
         <div data-role="footer" data-theme="a">
