@@ -30,7 +30,7 @@
 	    <div data-role="content" >
                     <h4>Results:</h4>
                     <?php
-                        foreach ($results as $films): #var_dump($results);
+                        foreach ($results as $films): echo "poep";#var_dump($results);
                             foreach ($films as $film): ?> 
                                 <p><b>Title: </b><?php echo $film->title; ?></p>
                             <?php endforeach; ?>
