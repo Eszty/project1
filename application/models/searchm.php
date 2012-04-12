@@ -8,7 +8,7 @@ class Searchm extends CI_Model
         return true; 
     }
     
-    public function results($data)
+    /*public function results($data)
     {
         #var_dump($data);
         var_dump("poep");
@@ -40,7 +40,7 @@ class Searchm extends CI_Model
 	    }
 	    return $film_array;
 
-    }
+    }*/
 
 
 }

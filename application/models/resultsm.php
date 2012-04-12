@@ -6,7 +6,7 @@ class Resultsm extends CI_Model
     public function results($data)
     {
         var_dump($data);
-        $title = $data["title"];
+        $title = $data["name"];
         #$title = "Elizabeth";
 	    $genre1 = $data["genre1"];
 	    $genre2 = $data["genre2"];
@@ -32,6 +32,7 @@ class Resultsm extends CI_Model
 	            array_push($film_array, $f);
 	        }
 	    }
+	    var_dump($film_array);
 	    return $film_array;
 
     }
